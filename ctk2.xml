@@ -14,15 +14,15 @@
         </value>
         <next>
           <block type="oled_drawtext" id="41">
-            <field name="TEXT">4*5=</field>
+            <field name="TEXT">10%5</field>
             <next>
               <block type="oled_drawnumber" id="50" inline="true">
                 <value name="NUMBER">
                   <block type="math_arithmetic" id="57" inline="true">
-                    <field name="OP">MULTIPLY</field>
+                    <field name="OP">MODULO</field>
                     <value name="A">
                       <block type="math_number" id="67">
-                        <field name="NUM">4</field>
+                        <field name="NUM">10</field>
                       </block>
                     </value>
                     <value name="B">
